@@ -11,7 +11,7 @@
       --dark: #111827;
       --muted: #6b7280;
       --border: #d1d5db;
-      --accent: #2563eb; /* slate blue */
+      --accent: #2563eb;
     }
 
     body {
@@ -24,7 +24,27 @@
     .container {
       max-width: 960px;
       margin: 0 auto;
-      padding: 48px 24px 64px;
+      padding: 32px 24px 64px;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+
+    nav img {
+      height: 28px;
+      width: auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 14px;
     }
 
     h1 {
@@ -34,7 +54,7 @@
 
     h2 {
       font-size: 24px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
     p {
@@ -43,12 +63,11 @@
       max-width: 720px;
     }
 
-    /* HERO */
-    .hero {
+    .section {
       margin-bottom: 72px;
     }
 
-    .hero-image {
+    .image-block {
       margin-top: 32px;
       height: 260px;
       border: 1px solid var(--border);
@@ -63,14 +82,13 @@
       border: 2px solid var(--border);
       padding: 28px;
       display: grid;
-      grid-template-columns: 280px 1fr;
+      grid-template-columns: 240px 1fr;
       gap: 28px;
       align-items: center;
-      margin-top: 32px;
     }
 
     .product-image {
-      height: 200px;
+      height: 180px;
       border: 1px solid var(--border);
       background: var(--gray);
       display: flex;
@@ -106,21 +124,11 @@
       border: 1px solid var(--border);
     }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
-      margin-top: 64px;
       padding-top: 24px;
       font-size: 13px;
       color: var(--muted);
-    }
-
-    footer img {
-      height: 28px;
-      width: auto;
-      max-width: 120px;
-      display: block;
-      margin-bottom: 8px;
     }
 
     @media (max-width: 768px) {
@@ -134,44 +142,42 @@
 <body>
   <div class="container">
 
-    <section class="hero">
+    <nav>
+      <img src="assets/logo.png" alt="Small Team SOP logo" />
+      <a href="airbnb.html">Airbnb SOP</a>
+    </nav>
+
+    <section class="section">
       <h1>Practical SOPs for Small Teams That Need Control</h1>
       <p>
         Small Team SOP builds enforceable operating procedures for service businesses.
         These are working documents designed to be printed, laminated, and used in the field.
       </p>
-      <div class="hero-image">Checklist system illustration</div>
+      <div class="image-block">Checklist system illustration</div>
     </section>
 
-    <section>
+    <section class="section">
       <h2>Available SOP Kit</h2>
 
       <div class="product">
         <div class="product-image">SOP document stack</div>
-
         <div>
           <h3>Airbnb & Short-Term Rental Cleaning SOP Kit</h3>
           <p>
             A complete operating system for Airbnb turnovers.
             Built for owners and managers running small cleaning teams.
           </p>
-
           <div class="price">$49</div>
-
           <div class="cta">
             <a href="airbnb.html" class="secondary">View Details</a>
-            <a href="https://smallteamsop.gumroad.com/l/airbnb-cleaning-sop" target="_blank" rel="noopener">
-              Buy on Gumroad
-            </a>
+            <a href="https://smallteamsop.gumroad.com/l/airbnb-cleaning-sop" target="_blank">Buy on Gumroad</a>
           </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <img src="assets/logo.png" alt="Small Team SOP logo"
-           style="height:28px;width:auto;max-width:120px;" />
-      <p>Digital products delivered instantly. Refunds available within 7 days via Gumroad.</p>
+      Digital products delivered instantly. Refunds available within 7 days via Gumroad.
     </footer>
 
   </div>
