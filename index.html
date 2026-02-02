@@ -1,128 +1,41 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Small Team SOP</title>
-<style>
-:root {
-  --accent: #5b6ea6;
-  --accent-dark: #4a5c90;
-  --border: #d1d5db;
-  --text: #111827;
-  --muted: #6b7280;
-}
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
-  margin: 0;
-  color: var(--text);
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 32px;
-  border-bottom: 1px solid var(--border);
-}
-header a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 600;
-}
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 32px;
-}
-h1 { font-size: 40px; margin-bottom: 12px; }
-h2 { font-size: 28px; margin-top: 60px; }
-p {
-  color: var(--muted);
-  max-width: 720px;
-  line-height: 1.6;
-}
-.hero-box {
-  background: #f1f5f9;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 32px 0;
-}
-.price {
-  display: inline-block;
-  background: var(--accent);
-  color: white;
-  font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 6px;
-  margin: 16px 0;
-}
-.actions {
-  display: flex;
-  gap: 12px;
-  margin: 12px 0 24px;
-}
-.btn {
-  padding: 12px 18px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.btn-primary {
-  background: var(--accent);
-  color: white;
-}
-.btn-secondary {
-  border: 1px solid var(--border);
-  color: var(--text);
-}
-.card {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 24px;
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-.card-box {
-  width: 200px;
-  height: 200px;
-  background: #f3f4f6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 60px;
-  padding: 24px 32px;
-  color: var(--muted);
-  font-size: 14px;
-}
-</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Small Team SOP</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <a href="index.html">Small Team SOP</a>
   <a href="airbnb.html">Airbnb SOP</a>
 </header>
+
 <div class="container">
-  <h1>Practical SOPs for Small Teams That Need Control</h1>
-  <p>Small Team SOP builds enforceable operating procedures for service businesses.</p>
-  <div class="hero-box">Checklist system illustration</div>
+  <section class="hero">
+    <h1>Practical SOPs for Small Teams That Need Control</h1>
+    <p>Enforceable operating procedures built for service businesses.</p>
+  </section>
+
+  <div class="illustration">
+    Checklist system illustration
+  </div>
+
   <h2>Available SOP Kit</h2>
   <div class="card">
-    <div class="card-box">SOP document stack</div>
+    <div class="illustration" style="flex:0 0 240px;">SOP document stack</div>
     <div>
-      <h3>Airbnb & Short-Term Rental Cleaning SOP Kit</h3>
+      <h3>Airbnb & Short‑Term Rental Cleaning SOP Kit</h3>
       <p>A complete operating system for Airbnb turnovers.</p>
-      <div class="price">$49</div>
-      <div class="actions">
-        <a class="btn btn-secondary" href="airbnb.html">View Details</a>
-        <a class="btn btn-primary" href="https://smallteamsop.gumroad.com/l/airbnb-cleaning-sop" target="_blank">Buy on Gumroad</a>
-      </div>
+      <span class="badge">$49</span><br><br>
+      <a class="button secondary" href="airbnb.html">View Details</a>
+      <a class="button primary" href="https://smallteamsop.gumroad.com/l/airbnb-cleaning-sop" target="_blank">Buy on Gumroad</a>
     </div>
   </div>
 </div>
-<footer>Digital products delivered instantly. Refunds available within 7 days via Gumroad.</footer>
-</body></html>
+
+<footer>
+  Digital products delivered instantly. Refunds available within 7 days via Gumroad.
+</footer>
+</body>
+</html>
